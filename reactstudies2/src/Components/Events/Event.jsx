@@ -1,12 +1,13 @@
-function Event (props) {
-    const {number} = props;
+import Button from "./Button";
 
+function Event (props) {
     function myEvent() {
-        console.log(`Show the number 1 from App.js:  ${number}`);
+        console.log(`First event activated`);
     }
     return (
         <div>
             <p>Click to dispatch the event</p>
+            <Button event={myEvent} text="First Event"/>
             <button onClick={myEvent}>Active</button>
         </div>
     );
