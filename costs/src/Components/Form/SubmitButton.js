@@ -4,7 +4,7 @@ function SubmitButton(props) {
     const {text} = props;
     return(
         <div>
-            <buttton className={styles.btn}>{text}</buttton>
+            <button className={styles.btn}>{text}</button>
         </div>
     );
 }

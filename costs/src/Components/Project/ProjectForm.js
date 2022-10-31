@@ -16,7 +16,6 @@ function ProjectForm(props) {
         })
         .then((response) => response.json())
         .then((data) => {
-            console.log(`YNASC`);
             setCategories(data);
         })
         .catch((err) => {
